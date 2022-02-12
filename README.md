@@ -34,9 +34,9 @@
 ## Record
 
 - 2/16
-  - 나누어 떨어지는 숫자 배열 [(문제)]()
-  - 두 정수 사이의 합 [(문제)]()
-  - 문자열 내 마음대로 정렬하기 [(문제)]()
-  - 가운데 글자 가져오기 [(문제)]()
-  - 같은 숫자는 싫어 [(문제)]()
+  - 나누어 떨어지는 숫자 배열 [(문제)](https://programmers.co.kr/learn/courses/30/lessons/12903)
+  - 두 정수 사이의 합 [(문제)](https://programmers.co.kr/learn/courses/30/lessons/12912)
+  - 문자열 내 마음대로 정렬하기 [(문제)](https://programmers.co.kr/learn/courses/30/lessons/12915)
+  - 가운데 글자 가져오기 [(문제)](https://programmers.co.kr/learn/courses/30/lessons/12903)
+  - 같은 숫자는 싫어 [(문제)](https://programmers.co.kr/learn/courses/30/lessons/12906)
 
