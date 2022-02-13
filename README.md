@@ -17,24 +17,24 @@
 ## Member
 
 - **준호님**
-  - Info
+  - https://github.com/jjuunnoo
 
 
 
 - **홍진님**
-  - Info
+  - https://github.com/0202hong
 
 
 
 - **재현님**
-  - Info
+  - https://github.com/plibi
 
 
 
 ## Record
 
 - 2/16
-  - 나누어 떨어지는 숫자 배열 [(문제)](https://programmers.co.kr/learn/courses/30/lessons/12903)
+  - 나누어 떨어지는 숫자 배열 [(문제)](https://programmers.co.kr/learn/courses/30/lessons/12910)
   - 두 정수 사이의 합 [(문제)](https://programmers.co.kr/learn/courses/30/lessons/12912)
   - 문자열 내 마음대로 정렬하기 [(문제)](https://programmers.co.kr/learn/courses/30/lessons/12915)
   - 가운데 글자 가져오기 [(문제)](https://programmers.co.kr/learn/courses/30/lessons/12903)
