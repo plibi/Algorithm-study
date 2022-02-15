@@ -5,4 +5,5 @@ def solution(s):
     else:
         answer = s[len(s)//2-1:len(s)//2+1]
     
+    
     return answer
