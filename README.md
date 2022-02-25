@@ -52,3 +52,9 @@
   - 정수 내림차순으로 배치하기 [(문제)](https://programmers.co.kr/learn/courses/30/lessons/12933)
   - 이상한 문자 만들기 [(문제)](https://programmers.co.kr/learn/courses/30/lessons/12930)
   - 행렬의 덧셈 [(문제)](https://programmers.co.kr/learn/courses/30/lessons/12950)
+- 3/02
+  - 10828 스택[(문제)](https://www.acmicpc.net/problem/10828)
+  - 10845 큐[(문제)](https://www.acmicpc.net/problem/10845)
+  - 10866 덱[(문제)](https://www.acmicpc.net/problem/10866)
+  - 1874 스택 수열[(문제)](https://www.acmicpc.net/problem/1874)
+  - 1966 프린터 큐[(문제)](https://www.acmicpc.net/problem/1966)
