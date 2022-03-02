@@ -6,14 +6,19 @@ de = deque()
 
 for _ in range(N):
     command = input().split()
+
     if command[0] == 'push_front':
         de.appendleft(int(command[1]))
+
     elif command[0] == 'push_back':
         de.append(int(command[1]))
+
     elif command[0] == 'pop_front':
         print(de.popleft() if de else -1)
+
     elif command[0] == 'pop_back':
         print(de.pop() if de else -1)
+
     elif command[0] == 'size':
         print(len(de))
     elif command[0] == 'empty':

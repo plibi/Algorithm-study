@@ -2,20 +2,19 @@ import sys
 input = sys.stdin.readline
 n = int(input())
 
-answer = []
 seq = [int(input()) for _ in range(n)][::-1]
-s = []
+stack = []
 answer = []
 
 for i in range(1, n+1):
-    s.append(i)
+    stack.append(i)
     answer.append('+')
-    if s:
-        while s[-1] == seq[-1]:
+    if stack:
+        while stack[-1] == seq[-1]:
             seq.pop()
-            s.pop()
+            stack.pop()
             answer.append('-')
-            if not s:
+            if not stack:
                 break
 if seq:
     print('NO')

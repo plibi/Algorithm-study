@@ -15,6 +15,7 @@ for _ in range(T):
                 doc.popleft()
         else:
             doc.rotate(-1)
+            
 
 # 다른풀이 (list만 사용)
 # https://www.acmicpc.net/source/14968208
