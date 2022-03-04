@@ -4,14 +4,19 @@
 
 - 프로그래머스 Lv.1 문제 풀기
   - https://programmers.co.kr/learn/challenges
+  
+    
 
+## 📌 2차 목표
 
+- solved.ac의 class2 문제 풀기 (분류된 백준 온라인 저지 문제들)
+  - https://solved.ac/search?query=in_class:2
 
 ## 🚩 Rule
 
 - 매주 수요일 21시 zoom 스터디
 - 전날 자정 전까지 `.py`파일 `github`에 `push`
-- 스터디 일정 변경 필요시 하루 전에 얘기하기
+- 스터디 일정 변경 필요시 하루 전까지 얘기하기
 
 
 
@@ -52,9 +57,16 @@
   - 정수 내림차순으로 배치하기 [(문제)](https://programmers.co.kr/learn/courses/30/lessons/12933)
   - 이상한 문자 만들기 [(문제)](https://programmers.co.kr/learn/courses/30/lessons/12930)
   - 행렬의 덧셈 [(문제)](https://programmers.co.kr/learn/courses/30/lessons/12950)
-- 3/02 (백준 온라인 저지)
+- 3/2 (백준 온라인 저지)
   - BOJ_10828 스택[(문제)](https://www.acmicpc.net/problem/10828)
   - BOJ_10845 큐[(문제)](https://www.acmicpc.net/problem/10845)
   - BOJ_10866 덱[(문제)](https://www.acmicpc.net/problem/10866)
   - BOJ_1874 스택 수열[(문제)](https://www.acmicpc.net/problem/1874)
   - BOJ_1966 프린터 큐[(문제)](https://www.acmicpc.net/problem/1966)
+
+- 3/9 (백준 온라인 저지)
+  - BOJ_2292 벌집[(문제)](https://www.acmicpc.net/problem/2292)
+  - BOJ_2839 설탕 배달[(문제)](https://www.acmicpc.net/problem/2839)
+  - BOJ_10989 수 정렬하기 3[(문제)](https://www.acmicpc.net/problem/10989)
+  - BOJ_1018 체스판 다시 칠하기[(문제)](https://www.acmicpc.net/problem/1018)
+  - BOJ_2805 나무 자르기[(문제)](https://www.acmicpc.net/problem/2805)
