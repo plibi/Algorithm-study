@@ -1,3 +1,3 @@
-arr1 = [['ABCDEFG'], [1,2,3,4,5,6]]
+dic = {1:1, 2:1, 3:1}
 
-print(arr1[0][0])
+if 1 in dic.keys(): print(True)
