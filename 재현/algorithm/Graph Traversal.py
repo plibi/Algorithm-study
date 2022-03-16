@@ -34,7 +34,7 @@ def bfs(graph, n, visited):
         v = queue.popleft()
         print(v, end=' ')
         for i in graph[v]:
-            if not graph[i]:
+            if not visited[i]:
                 queue.append(i)
                 visited[i] = True
 
