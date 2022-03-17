@@ -4,7 +4,7 @@ num = int(sys.stdin.readline())
 
 def fibonachi(num):
     fib = [0, 1] + [0] * (num - 1)
-
+    # [0 1 1 2 3 5]
     for i in range(2, num + 1):
         fib[i] += fib[i - 1] + fib[i - 2]
 

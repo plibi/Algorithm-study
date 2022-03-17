@@ -73,3 +73,7 @@
   - BOJ_1260 DFS와 BFS[(문제)](https://www.acmicpc.net/problem/1260)
   - BOJ_1003 피보나치 함수[(문제)](https://www.acmicpc.net/problem/1003)
   - BOJ_1927 최소 힙[(문제)](https://www.acmicpc.net/problem/1927)
+- 3/23(백준 온라인 저지)
+  - BOJ_1012 유기농 배추[(문제)](https://www.acmicpc.net/problem/1012)
+  - BOJ_1463 1로 만들기[(문제)](https://www.acmicpc.net/problem/1463)
+  - BOJ_1389 케빈 베이컨의 6단계 법칙[(문제)](https://www.acmicpc.net/problem/1389)
