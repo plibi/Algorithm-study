@@ -30,7 +30,7 @@ for _ in range(M):
 
 for i in graph:
     i.sort()
-
+    
 dfs(graph, V, visited)
 print()
 visited = [False] * (N+1)
