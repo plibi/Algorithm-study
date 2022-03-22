@@ -1,7 +1,11 @@
-def test(arr):
-    arr[0][0] = 100
-    return arr
+from collections import deque
 
-arr = [[1,2,3],[4,5,6]]
-arr = test(arr)
-print(arr)
+bfs = deque()
+
+for i in range(5):
+    bfs.append([i])
+
+    while bfs:
+        k = bfs.popleft()
+        for j in k:
+            print(j)
