@@ -37,7 +37,6 @@ def count(i, j, arr):
                 bfs.append((x - 1, y))
                 visited.append((x - 1, y))
 
-
     for i, j in visited:
         arr[i][j] = False        
 
