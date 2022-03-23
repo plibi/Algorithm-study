@@ -36,7 +36,7 @@ from bisect import bisect_left, bisect_right
 
 arr = [1, 2, 4, 4, 5, 7, 9]
 x = 4
-print(bisect_left(arr, 4))
+print('?', bisect_left(arr, 4))
 print(bisect_right(arr, 4))
 
 ### 값이 특정 범위에 속하는 데이터 개수 구하기

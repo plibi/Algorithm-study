@@ -24,7 +24,7 @@ dfs = []
 dfs.append(V)
 
 while dfs:
-    node = dfs.pop()
+    node = dfs.pop(0)
     if not node in visited:
         visited.append(node)
         if node in graph.keys():
