@@ -31,3 +31,8 @@ for i in range(1, n+1):
     count.append(bfs(friends, i))
 print(count.index(min(count)) + 1)
 
+
+# https://chaewsscode.tistory.com/98
+
+
+# 
