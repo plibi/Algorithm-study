@@ -14,8 +14,6 @@ for _ in range(M):
     else:
         graph[inp2].extend([inp1])
 
-print(graph)
-
 min_sum = 0xffffffff
 min_person = 0
 
@@ -27,9 +25,7 @@ for i in range(1, N + 1):
     bfs.append([i])
     n = 0
     while bfs:
-    # for _ in range(5):
         node = bfs.popleft()
-        print(node)
         sum += len(node) * n
         n += 1
 
@@ -43,9 +39,9 @@ for i in range(1, N + 1):
         ttmp.sort()
         if ttmp:
             bfs.append(ttmp)
-    print(sum)
-    print()
     if min_sum > sum:
         min_sum = sum
         min_person = i
+
+        
 print(min_person)
