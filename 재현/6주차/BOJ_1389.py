@@ -33,6 +33,3 @@ print(count.index(min(count)) + 1)
 
 
 # https://chaewsscode.tistory.com/98
-
-
-# 
