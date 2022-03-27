@@ -16,7 +16,7 @@ else:
     for i in range(3, len(stairs)):
         table[i] = max(stairs[i]+stairs[i-1]+table[i-3], stairs[i]+table[i-2])
 
-    print(table[-1])
+    print(table)
 
 
 # 맨 마지막 계단부터 거꾸로 생각
