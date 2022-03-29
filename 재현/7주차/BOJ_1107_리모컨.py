@@ -16,7 +16,8 @@ usable = list(set(range(10)) - set(broken))
 if n == state:
     print(0)
 else:
-    # n과 가장 가까운수를 찾는다
+
+    # n과 가장 가까운수를 찾는다 
     result = abs(n-state)
     for i in range(1000001):
         for j in str(i):
@@ -24,9 +25,10 @@ else:
                 # print('if', 'i:', i, 'j:', j)
                 break
         else:
-            # print('else i:', i)
+            # +,-로만 움직여서 n으로 가는 버튼횟수와 n과 가장 가까운 채널로 이동한뒤 +,-로 움직여서 n으로 가는 횟수를 비교해 더 적은 쪽 선택
             result = min(result, abs(n-i)+len(str(i)))
+            # print('else i:', i)
+            # print(result)
     print(result)
     
 
-# +,-로만 움직여서 n으로 가는 버튼횟수와 n과 가장 가까운 채널로 이동한뒤 +,-로 움직여서 n으로 가는 횟수를 비교해 더 적은 쪽 선택
