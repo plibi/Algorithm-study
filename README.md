@@ -81,3 +81,7 @@
   - BOJ_1107 리모콘[(문제)](https://www.acmicpc.net/problem/1107)
   - BOJ_2178 미로탐색[(문제)](https://www.acmicpc.net/problem/2178)
   - BOJ_2579 계단 오르기[(문제)](https://www.acmicpc.net/problem/2579)
+- 4/6(백준 온라인 저지)
+  - BOJ_1074 Z[(문제)](https://www.acmicpc.net/problem/1074)
+  - BOJ_1541 잃어버린 괄호[(문제)](https://www.acmicpc.net/problem/1541)
+  - BOJ_1676 팩토리얼 0의 개수[(문제)](https://www.acmicpc.net/problem/1676)
