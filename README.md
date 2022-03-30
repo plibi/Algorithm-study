@@ -77,3 +77,7 @@
   - BOJ_1012 유기농 배추[(문제)](https://www.acmicpc.net/problem/1012)
   - BOJ_1463 1로 만들기[(문제)](https://www.acmicpc.net/problem/1463)
   - BOJ_1389 케빈 베이컨의 6단계 법칙[(문제)](https://www.acmicpc.net/problem/1389)
+- 3/30(백준 온라인 저지)
+  - BOJ_1107 리모콘[(문제)](https://www.acmicpc.net/problem/1107)
+  - BOJ_2178 미로탐색[(문제)](https://www.acmicpc.net/problem/2178)
+  - BOJ_2579 계단 오르기[(문제)](https://www.acmicpc.net/problem/2579)
