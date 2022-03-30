@@ -7,7 +7,7 @@ count = 0
 move = [(-1, 0), (1, 0), (0, -1), (0, 1)]
 def bfs(x, y):
     q = [(x, y)]
-    count = 0
+
     while q:
         x, y = q.pop(0)
         
@@ -19,7 +19,7 @@ def bfs(x, y):
                 if maze[mov_x][mov_y] == 1:
                     q.append((mov_x, mov_y))
                     maze[mov_x][mov_y] = maze[x][y]+1
-                    count += 1
+                    
     return maze[n-1][m-1]
 
 print(bfs(0, 0))
