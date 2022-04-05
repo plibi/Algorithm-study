@@ -1,25 +1,31 @@
 #
+#
 
 import sys
-N, r, c = map(int, sys.stdin.readline().split())
+n, r, c = map(int, sys.stdin.readline().split())
 
-def visit(count, row, col, end_row, end_col):
-    if row == r and col == c:
-        return count
+count = 0
+while n != 0:
+    n -= 1
+    size = 2**n
 
-    mid_row = ...
     # bottom right
-    if row > 2**end_row//2-1 and col > 2**end_col//2-1:
-        count += 2**end_row + 1
-        return visit(count,2**end_row//2-1, 2**end_col//2-1, end_row, )
-    # bottom left
-    if row > 2**end_row//2-1 and col <= 2**end_col//2-1:
-        ...
-    # top right
-    if row <= 2**end_row//2-1 and col > 2**end_col//2-1:
-        ...
-    # top left
-    if row <= 2**end_row//2-1 and col <= 2**end_col//2-1:
-        ...
+    if r >= size and c >= size:
+        count += size*size*3
+        r -= size
+        c -= size
 
-# 2 3 1
+    # bottom left
+    if r >= size and c < size:
+        count += size*size*2
+        r -= size
+    
+    # top right
+    if r < size and c >= size:
+        count += size*size
+        c -= size
+    # top left
+    if r < size and c < size:
+        ...
+        
+print(count)
