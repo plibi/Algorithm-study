@@ -23,4 +23,3 @@ def bfs(x, y):
     return maze[n-1][m-1]
 
 print(bfs(0, 0))
-
