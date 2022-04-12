@@ -18,7 +18,7 @@ while queue:
     if spot == k:
         print(time)
         break
-    # move
+    # move (+1, -1, *2)
     move = [spot+1, spot-1, 2*spot]
     for moving in move:
         if 0 <= moving < 100001 and not visited[moving]:
