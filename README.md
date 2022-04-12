@@ -85,3 +85,7 @@
   - BOJ_1074 Z[(문제)](https://www.acmicpc.net/problem/1074)
   - BOJ_1541 잃어버린 괄호[(문제)](https://www.acmicpc.net/problem/1541)
   - BOJ_1676 팩토리얼 0의 개수[(문제)](https://www.acmicpc.net/problem/1676)
+- 4/13 (BOJ)
+  - BOJ_1697 숨바꼭질[(문제)](https://www.acmicpc.net/problem/1697)
+  - BOJ_1780 종이의 개수[(문제)](https://www.acmicpc.net/problem/1780)
+  - BOJ_1931 회의실 배정[(문제)](https://www.acmicpc.net/problem/1931)
