@@ -1,4 +1,5 @@
-# 
+# 소요시간 : 30분
+# 아이디어 : 
 
 import sys
 input = sys.stdin.readline
