@@ -15,10 +15,8 @@ for _ in range(5):
     tmp = tmp.replace('-0', '-')
     tmp = tmp.replace('+0', '+')
 
-check = False
-for i, chr in enumerate(input_str):
+for chr in tmp:
     if chr=='-':
-        check = True
         tmp = tmp.replace('-', ')-(')
         tmp = '('+tmp+')'
         break
