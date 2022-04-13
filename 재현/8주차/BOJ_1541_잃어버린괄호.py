@@ -10,3 +10,8 @@ answer = t[0]
 for i in t[1:]:
     answer -= i
 print(answer)
+
+# ex) 55-50+40
+# '-'기준으로 split => temp = ['55', '50+40']
+# temp[i]를 정리 => t = [55, 90] 
+# answer = t[0]로 두고 answer에서 t[1:]들을 전부 빼주면 ok
