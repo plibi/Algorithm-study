@@ -1,5 +1,5 @@
-#
-#
+# 소요시간 : 30분
+# 
 
 import sys
 n, r, c = map(int, sys.stdin.readline().split())
@@ -24,6 +24,7 @@ while n != 0:
     if r < size and c >= size:
         count += size*size
         c -= size
+
     # top left
     if r < size and c < size:
         ...
