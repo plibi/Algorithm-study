@@ -1,5 +1,6 @@
-# 소요시간 : 30분
-# 아이디어 : 
+# 아이디어 : graph의 element가 모두 같은지 확인 같으면 element 개수만큼 +, 다르면 divide
+# => 시간초과, 모두 같은지 확인하는 과정이 반복되면서 시간초과 발생하는 듯 하여
+# => 다음 element와 비교해서 다르면 바로 divide하는 방식으로 변경
 
 import sys
 input = sys.stdin.readline
@@ -12,119 +13,72 @@ nums = [0, 0, 0]    # -1, 0, 1
 for _ in range(n):
     line = list(map(int, input().split()))
     paper.append(line)
+print(paper)
 
-# graph가 모두 같은 수인지 확인하는 함수
-def same(graph):
-    first = graph[0][0]
-    for i in range(len(graph)):
-        for j in range(len(graph[0])):
-            if first != graph[i][j]:
-                return False
-    return True
+# # graph가 모두 같은 수인지 확인하는 함수
+# def same(graph):
+#     first = graph[0][0]
+#     for i in range(len(graph)):
+#         for j in range(len(graph[0])):
+#             if first != graph[i][j]:
+#                 return False
+#     return True
 
-# graph를 9등분 하는 함수
-def divide(graph):
-    if len(graph) == 1:
-        nums[graph[0][0]+1] += 1
+# # graph를 9등분 하는 함수
+# def divide(graph):
+#     print(graph)
+#     if len(graph) == 1:
+#         print('Yes!')
+#         nums[graph[0][0]+1] += 1
+#     else:
+#         print('No!')
+#         if same(graph):
+#             print('Same')
+#             nums[graph[0][0]+1] += 1
+#         else:
+#             print('Not same')
+#             division = len(graph) // 3
+#             part1 = [0, 1, 2]
+#             part2 = [0, 1, 2]
+#             for i in part1:
+#                 for j in part2:
+#                     temp = []
+#                     for row in range(division*i, division*(i+1)):
+#                         temp_col = []
+#                         for col in range(division*j, division*(j+1)):
+#                             temp_col.append(graph[row][col])
+#                         print(temp_col)
+#                         temp.append(temp_col)
+#                     divide(temp)
+
+def cut(x, y, n):
+    check = paper[x][y]
+    for r in range(x, x+n):
+        for c in range(y, y+n):
+            if check != paper[r][c]:
+                div = n // 3
+                # 1, 2, 3
+                cut(x, y, div)
+                cut(x, y + div, div)
+                cut(x, y + div*2, div)
+                # 4, 5, 6
+                cut(x + div, y, div)
+                cut(x + div, y + div, div)
+                cut(x + div, y + div*2, div)
+                # 7, 8, 9
+                cut(x + div*2, y, div)
+                cut(x + div*2, y + div, div)
+                cut(x + div*2, y + div*2, div)
+                return
+
+    if check == -1:
+        nums[0] += 1
+    elif check == 0:
+        nums[1] += 1
     else:
-        for i in range(division):
-            for j in range(division):
-                ...
+        nums[2] += 1
 
-        g1, g2, g3 = [], [], []
-        g4, g5, g6 = [], [], []
-        g7, g8, g9 = [], [], []
-        division = len(graph)//3
-
-        for r1 in range(division):
-            line1 = []
-            line2 = []
-            line3 = []
-            for c1 in range(division):
-                line1.append(graph[r1][c1])
-            g1.append(line1)
-            for c2 in range(division, 2*division):
-                line2.append(graph[r1][c2])
-            g2.append(line2)
-            for c3 in range(2*division, 3*division):
-                line3.append(graph[r1][c3])
-            g3.append(line3)
-        
-        if same(g1) == True:
-            nums[g1[0][0]+1] += 1
-        else:
-            divide(g1)
-        if same(g2) == True:
-            nums[g2[0][0]+1] += 1
-        else:
-            divide(g2)
-        if same(g3) == True:
-            nums[g3[0][0]+1] += 1
-        else:
-            divide(g3)    
-
-        for r2 in range(division, 2*division):
-            line1 = []
-            line2 = []
-            line3 = []
-            for c1 in range(division):
-                line1.append(graph[r2][c1])
-            g4.append(line1)
-            for c2 in range(division, 2*division):
-                line2.append(graph[r2][c2])
-            g5.append(line2)
-            for c3 in range(2*division, 3*division):
-                line3.append(graph[r2][c3])
-            g6.append(line3)
-        # print('g1:', g1, 'g2:',g2, 'g3:',g3)
-        if same(g4) == True:
-            nums[g4[0][0]+1] += 1
-        else:
-            divide(g4)
-        if same(g5) == True:
-            nums[g5[0][0]+1] += 1
-        else:
-            divide(g5)
-        if same(g6) == True:
-            nums[g6[0][0]+1] += 1
-        else:
-            divide(g6)
-
-        for r3 in range(2*division, 3*division):
-            line1 = []
-            line2 = []
-            line3 = []
-            for c1 in range(division):
-                line1.append(graph[r3][c1])
-            g7.append(line1)
-            for c2 in range(division, 2*division):
-                line2.append(graph[r3][c2])
-            g8.append(line2)
-            for c3 in range(2*division, 3*division):
-                line3.append(graph[r3][c3])
-            g9.append(line3)
-        
-        if same(g7) == True:
-            nums[g7[0][0]+1] += 1
-        else:
-            divide(g7)
-        if same(g8) == True:
-            nums[g8[0][0]+1] += 1
-        else:
-            divide(g8)
-        if same(g9) == True:
-            nums[g9[0][0]+1] += 1
-        else:
-            divide(g9)
-                
-
-
-# 모두 같은 수인가 확인, 아니면 9등분
-# check = same(paper)
-# if check == True:
-#     nums[paper[0][0]+1] += 1
-# else:
-#     ...
-divide(paper)
+# divide(paper)
+cut(0, 0, n)
 for number in nums:
     print(number)
