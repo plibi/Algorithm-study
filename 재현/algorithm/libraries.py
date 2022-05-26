@@ -1,6 +1,5 @@
 # 유용한 라이브러리 및 함수들
 
-
 # eval()
 result = eval('(3+5)*7')
 print(result)
